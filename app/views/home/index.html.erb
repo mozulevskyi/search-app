@@ -1,0 +1,9 @@
+<div class="index-style">
+  <h1 class="index-title">Hello, this is simple search app with preload data.</h1>
+  <%= form_tag(input_data_path, method: :get) do %>
+    <a title="Then fill in what you are looking for according to the chosen option.">
+      <%= text_field_tag :option, '', class: 'index-form-text' %>
+    </a>
+    <%= submit_tag 'Search', class: 'index-submit-select' %>
+  <% end %>
+</div>

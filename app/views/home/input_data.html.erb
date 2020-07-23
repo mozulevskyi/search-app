@@ -1,0 +1,34 @@
+<div class="table-page">
+  <table>
+    <% if !@all_values.present? %>
+      <div class="alert-dialog">Ooops! There's nothing here, try something else.</div>
+    <% else %>
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Designed By</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @all_values.each do |value| %>
+        <tr>
+          <td>
+            <%= value["Name"] %>
+          </td>
+          <td>
+            <%= value["Type"] %>
+          </td>
+          <td>
+            <%= value["Designed by"] %>
+          </td>
+        </tr>
+      <% end %>
+      </tbody>
+    <% end %>
+  </table>
+
+  <br>
+
+  <button class="index-submit-select"><%= link_to 'Back to search', root_path %></button>
+</div>

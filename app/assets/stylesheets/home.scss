@@ -1,0 +1,66 @@
+.index-style {
+  text-align: center;
+  margin-top: 15%;
+
+  .index-submit-select {
+    height: 35px;
+  }
+}
+
+.index-title {
+  font-family: monospace;
+  color: darkcyan;
+}
+
+.index-form-text {
+  width: 30%;
+  height: 30px;
+  font-size: 20px;
+  border: 2px solid lightgray;
+}
+
+.index-submit-select {
+  width: 10%;
+  height: 100%;
+  border: none;
+  font-size: 20px;
+  font-family: monospace;
+  color: darkcyan;
+  cursor: pointer;
+
+  a {
+    text-decoration: none !important;
+    color: darkcyan;
+  }
+}
+
+.table-page {
+  text-align: -webkit-center;
+
+  table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    padding: 15px;
+  }
+
+  th {
+    font-family: monospace;
+    color: darkcyan;
+    font-size: 20px;
+  }
+}
+
+.alert-dialog {
+  font-size: 30px;
+  font-family: monospace;
+  color: darkgoldenrod;
+  margin-top: 15%;
+}
