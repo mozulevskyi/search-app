@@ -11,11 +11,7 @@ class HomeController < ApplicationController
     if values.count > 1
       sorted_data = []
       values.each do |value|
-        unless sorted_data.present?
-          data = loaded_data
-        else
-          data = sorted_data
-        end
+        data = sorted_data.present? ? sorted_data : loaded_data
         sorted_data = search_engine(value, data)
       end
 
